@@ -1,0 +1,55 @@
+ACCOUNT DETAILS
+Primary Account Holder Name: Julliana Hurgo
+Second Account Holder Name: Grace Opao
+Account Number: 202020
+Account Sub-Type: JOINT
+Product Type: ATM CURRENT ACCOUNT
+Currency: US DOLLAR
+Amount: 10,570.00
+PIN: 2020
+Primary Account Holder ID: NATIONAL ID
+Secondary Account Holder ID: NATIONAL ID
+PERSONAL INFORMATION
+Primary Account Holder Age: 20
+Secondary Account Holder Age: 20
+Primary Account Holder Address: Dingle, Iloilo
+Secondary Account Holder Address: Janiuay, Iloilo
+Primary Account Holder Contact No.: 09876543212
+Secondary Account Holder Contact No.: 09876123456
+Primary Account Holder Email: julliana@yahoo.om
+Secondary Account Holder Email: grace@yahoo.com
+Primary Account Holder Occupation: Student
+Secondary Account Holder Occupation: Housewife
+
+
+ACCOUNT DETAILS
+Account Holder Name: Julliana Hurgo
+Account Number: 303030
+Account Sub-Type: INDIVIDUAL
+Product Type: ATM SAVINGS ACCOUNT
+Currency: PHP PESO
+Amount: 10,500.00
+PIN: 0303
+ID: NATIONAL ID
+PERSONAL INFORMATION
+Age: 20
+Address: Dingle, Iloilo
+Contact No.: 09123456789
+Email: jullianah@gmail.com
+Occupation: Student
+ACCOUNT DETAILS
+Account Holder Name: Mary Angel Palmares
+Account Number: 101010
+Account Sub-Type: INDIVIDUAL
+Product Type: ATM SAVINGS ACCOUNT
+Currency: PHP PESO
+Amount: 10,000.00
+PIN: 1010
+ID: PASSPORT
+PERSONAL INFORMATION
+Age: 22
+Address: Lapaz, Iloilo City, Iloilo 5000
+Contact No.: 09123456789
+Email: mary@yahoo.com
+Occupation: Student
+
