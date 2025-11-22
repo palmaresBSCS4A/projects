@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoTax AI - AI-Powered Tax Assistant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="spinner big"></div>
+      <h2>AutoTax AI</h2>
+      <p>Initializing tax assistant...</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">AutoTax <span class="ai-text">AI</span></h1>
+    <p class="tagline">AI-Powered Tax Assistant</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#ask-ai">Ask AI</a>
+    <a href="#form-fill">Form Filler</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="feature-card">
+      <i class="fas fa-robot"></i>
+      <h3>AI Tax Expert</h3>
+      <p>Get instant answers to complex tax questions</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-file-alt"></i>
+      <h3>Form Automation</h3>
+      <p>Fill BIR Form 2316 in minutes</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Secure</h3>
+      <p>Your data never leaves your device</p>
+    </div>
+  </div>
+
+  <!-- DeepSeek Chatbot -->
+  <div class="chatbot-wrapper-container" id="ask-ai">
+    <div class="deepseek-chatbot-wrapper">
+      <h2 class="section-title">Ask Our AI Tax Assistant</h2>
+      <div id="deepseekChatbot" class="chatbot-container"></div>
+      <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+        <p>Thinking...</p>
+      </div>
+      <div id="deepseekInputArea" class="input-area">
+        <input 
+          type="text" 
+          id="deepseekUserInput" 
+          placeholder="Ask about tax filing, deductions, etc..." 
+          class="input-box" 
+        />
+        <button class="btn send-btn" onclick="submitDeepSeekQuestion()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form-Filling Chatbot -->
+  <div class="chatbot-wrapper-container" id="form-fill">
+    <div class="form-fill-chatbot-wrapper">
+      <h2 class="section-title">Auto-Fill Form 2316</h2>
+      <div class="form-container">
+        <div class="pdf-container">
+          <iframe id="pdfPreview" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
+        <div class="chatbot-wrapper">
+          <div id="chatbot" class="chatbot-container"></div>
+          <div id="inputArea" class="input-area">
+            <input 
+              type="text" 
+              id="userInput" 
+              placeholder="Type your answer here..." 
+              class="input-box" 
+            />
+            <div class="button-group">
+              <button class="btn send-btn" onclick="submitAnswer()">Send</button>
+              <button class="btn upload-btn" onclick="uploadTemplate()">Upload Template</button>
+              <button class="btn download-btn" onclick="downloadPdf()">Download PDF</button>
+              <button class="btn reset-btn" onclick="resetChat()">Reset</button>
+            </div>
+          </div>
+          <input type="file" id="fileInput" style="display: none;" accept=".xlsx" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+<div class="about-us-section" id="about">
+  <h2 class="section-title">About AutoTax AI</h2>
+  
+  <div class="about-content">
+    <div class="about-text">
+      <h3>Our Project</h3>
+      <p>AutoTax AI represents our final project for <strong>ICT 120 - Intelligent Systems</strong> at the Iloilo Scinece and Technology University. This innovative platform combines artificial intelligence with tax expertise to revolutionize how Filipinos handle their tax obligations.</p>
+      
+      <h3>Our Mission</h3>
+      <p>We recognized the complexity and anxiety surrounding tax compliance in the Philippines. Our goal was to create an intelligent assistant that:</p>
+      <ul class="mission-list">
+        <li><i class="fas fa-check-circle"></i> Simplifies the tax filing process through conversational AI</li>
+        <li><i class="fas fa-check-circle"></i> Automates form completion with intelligent data handling</li>
+        <li><i class="fas fa-check-circle"></i> Provides accurate, up-to-date tax information</li>
+        <li><i class="fas fa-check-circle"></i> Makes tax compliance accessible to all Filipinos</li>
+      </ul>
+    </div>
+    
+  
+  <h3 class="team-title">Development Team</h3>
+  <div class="team-members">
+    <div class="team-member">
+      <img src="member1.png" alt="Raymart John Patriarca" />
+      <p>Raymart John Patriarca</p>
+    </div>
+    <div class="team-member">
+      <img src="member2.png" alt="Aaron Hans Oliverio" />
+      <p>Aaron Hans Oliverio</p>
+    </div>
+    <div class="team-member">
+      <img src="member3.png" alt="Juliana Antonette Hurgo" />
+      <p>Juliana Antonette Hurgo</p>
+    </div>
+    <div class="team-member">
+      <img src="member4.png" alt="Mary Angel Palmares" />
+      <p>Mary Angel Palmares</p>
+    </div>
+    <div class="team-member">
+      <img src="member5.png" alt="Nethan Quinn Jael" />
+      <p>Nethan Quinn Jael</p>
+    </div>
+    <div class="team-member">
+      <img src="member6.png" alt="Loi Marie Maxino" />
+      <p>Loi Marie <br>Maxino</p>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Powered by <span class="neon-text">AutoTax AI</span></p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script>
+const chatBotElement = document.getElementById('chatbot');
+const userInputElement = document.getElementById('userInput');
+const fileInputElement = document.getElementById('fileInput');
+
+let questions = [
+  "What year are you reporting for?",
+  "Start date of the period (MM/DD)?",
+  "End date of the period (MM/DD)?",
+  "Your TIN?",
+  "Full name (Last, First, Middle)?",
+  "RDO Code?",
+  "Registered address?",
+  "ZIP Code?",
+  "Local home address?",
+  "ZIP Code for local home address?",
+  "Foreign address (if any)?",
+  "Date of birth (MM/DD/YYYY)?",
+  "Contact number?",
+  "Statutory minimum wage rate per day?",
+  "Statutory minimum wage rate per month?",
+  "Are you a Minimum Wage Earner (MWE)? (yes/no)",
+  "Employer's TIN?",
+  "Employer's name?",
+  "Employer's registered address?",
+  "Employer's ZIP Code?",
+  "Type of employer? (main/secondary)",
+  "Did you have a previous employer during this tax year? (yes/no)"
+];
+
+questions.push(
+      "How much was your total PERA contribution this year?"
+    );
+
+const fieldMappings = {
+  "What year are you reporting for?": "tf1",
+  "Start date of the period (MM/DD)?": "tf2a",
+  "End date of the period (MM/DD)?": "tf2b",
+  "Your TIN?": "tf3",
+  "Full name (Last, First, Middle)?": "tf4",
+  "RDO Code?": "tf5",
+  "Registered address?": "tf6",
+  "ZIP Code?": "tf6a",
+  "Local home address?": "tf6b",
+  "ZIP Code for local home address?": "tf6c",
+  "Foreign address (if any)?": "tf6d",
+  "Date of birth (MM/DD/YYYY)?": "tf7",
+  "Contact number?": "tf8",
+  "Statutory minimum wage rate per day?": "tf9",
+  "Statutory minimum wage rate per month?": "tf10",
+  "Employer's TIN?": "tf12",
+  "Employer's name?": "tf13",
+  "Employer's registered address?": "tf14",
+  "Employer's ZIP Code?": "tf14a",
+  "Previous employer's TIN?": "tf16",
+  "Previous employer's name?": "tf17",
+  "Previous employer's address?": "tf18",
+  "ZIP code of previous employer?": "tf18a",
+  "Basic salary (including exempt ₱250,000 & below or MWE)?": "tf29",
+  "Holiday Pay (if MWE)?": "tf30",
+  "Overtime Pay (if MWE)?": "tf31",
+  "Night Shift Differential (if MWE)?": "tf32",
+  "Hazard Pay (if MWE)?": "tf33",
+  "13th Month Pay and Other Benefits (max ₱90,000)?": "tf34",
+  "De Minimis Benefits?": "tf35",
+  "SSS/GSIS/PHIC/PAG-IBIG contributions and union dues?": "tf36",
+  "Salaries and other forms of compensation?": "tf37",
+  "Regular Basic Salary (taxable)?": "tf39",
+  "Representation Allowance?": "tf40",
+  "Transportation Allowance?": "tf41",
+  "Cost of Living Allowance (COLA)?": "tf42",
+  "Fixed Housing Allowance?": "tf43",
+  "Specify other taxable compensation": "tf44a",
+  "Enter the amount for other taxable compensation": "tf44a1",
+  "Specify other non-taxable compensation": "tf44b",
+  "Enter the amount for other non-taxable compensation": "tf44b1",
+  "Commission?": "tf45",
+  "Profit Sharing?": "tf46",
+  "Fees Including Director's Fees?": "tf47",
+  "Taxable 13th Month Benefits?": "tf48",
+  "Hazard Pay?": "tf49",
+  "Overtime Pay?": "tf50",
+  "Specify benefit under fringe benefit tax": "tf51a",
+  "Enter amount for other benefit under fringe benefit tax": "tf51a1",
+  "Specify another benefit under fringe benefit tax": "tf51b",
+  "Enter amount for another benefit under fringe benefit tax": "tf51b1",
+  "Amount of Taxes Withheld from Previous Employer": "tf25a",
+  "How much was your total PERA contribution this year?": "pera_contribution"
+};
+
+let answers = {};
+let currentQuestion = 0;
+let originalPdfBytes = null;
+
+function displayQuestion() {
+  if (currentQuestion >= questions.length) {
+    chatBotElement.innerHTML += `<div class="bot">Thank you for your answers! The form is now complete.</div>`;
+    return;
+  }
+  const question = questions[currentQuestion];
+  chatBotElement.innerHTML += `<div class="bot">${question}</div>`;
+}
+
+async function submitAnswer() {
+  const answer = userInputElement.value.trim();
+  if (!answer) return;
+
+  const question = questions[currentQuestion];
+  chatBotElement.innerHTML += `<div class="user">${answer}</div>`;
+  userInputElement.value = '';
+  answers[question] = answer;
+
+  if (question === "Did you have a previous employer during this tax year? (yes/no)" && answer.toLowerCase() === "yes") {
+    questions.splice(currentQuestion + 1, 0,
+      "Previous employer's TIN?",
+      "Previous employer's name?",
+      "Previous employer's address?",
+      "ZIP code of previous employer?",
+      "Amount of Taxes Withheld from Previous Employer"
+    );
+  }
+
+  if (question === "Are you a Minimum Wage Earner (MWE)? (yes/no)" && !questions.includes("Basic salary (including exempt ₱250,000 & below or MWE)?")) {
+    questions.push(
+      "Basic salary (including exempt ₱250,000 & below or MWE)?",
+      "Holiday Pay (if MWE)?",
+      "Overtime Pay (if MWE)?",
+      "Night Shift Differential (if MWE)?",
+      "Hazard Pay (if MWE)?",
+      "13th Month Pay and Other Benefits (max ₱90,000)?",
+      "De Minimis Benefits?",
+      "SSS/GSIS/PHIC/PAG-IBIG contributions and union dues?",
+      "Salaries and other forms of compensation?",
+      "Regular Basic Salary (taxable)?",
+      "Representation Allowance?",
+      "Transportation Allowance?",
+      "Cost of Living Allowance (COLA)?",
+      "Fixed Housing Allowance?",
+      "Are there any other taxable compensation income? (yes/no)"
+    );
+  }
+
+  if (question.includes("Are there any other taxable compensation income? (yes/no)")) {
+    if (answer.toLowerCase() === "yes") {
+      questions.splice(currentQuestion + 1, 0,
+        "Specify other taxable compensation",
+        "Enter the amount for other taxable compensation",
+        "Are there any other non-taxable compensation income? (yes/no)"
+      );
+    } else {
+      answers["Specify other taxable compensation"] = "";
+      answers["Enter the amount for other taxable compensation"] = "0.00";
+      answers["Are there any other non-taxable compensation income? (yes/no)"] = "no";
+      answers["Specify other non-taxable compensation"] = "";
+      answers["Enter the amount for other non-taxable compensation"] = "0.00";
+      questions.splice(currentQuestion + 1, 0,
+        "Commission?",
+        "Profit Sharing?",
+        "Fees Including Director's Fees?",
+        "Taxable 13th Month Benefits?",
+        "Hazard Pay?",
+        "Overtime Pay?",
+        "Are there any other benefits subject to fringe benefit tax? (yes/no)"
+      );
+    }
+  }
+
+if (question.includes("Are there any other non-taxable compensation income? (yes/no)")) {
+  if (answer.toLowerCase() === "yes") {
+    questions.splice(currentQuestion + 1, 0,
+      "Specify other non-taxable compensation",
+      "Enter the amount for other non-taxable compensation"
+    );
+  } else {
+
+    answers["Specify other non-taxable compensation"] = "";
+    answers["Enter the amount for other non-taxable compensation"] = "0.00";
+    questions.splice(currentQuestion + 1, 0,
+      "Commission?",
+      "Profit Sharing?",
+      "Fees Including Director's Fees?",
+      "Taxable 13th Month Benefits?",
+      "Hazard Pay?",
+      "Overtime Pay?",
+      "Are there any other benefits subject to fringe benefit tax? (yes/no)"
+    );
+  }
+}
+
+if (question === "Enter the amount for other non-taxable compensation") {
+  questions.splice(currentQuestion + 1, 0,
+    "Commission?",
+    "Profit Sharing?",
+    "Fees Including Director's Fees?",
+    "Taxable 13th Month Benefits?",
+    "Hazard Pay?",
+    "Overtime Pay?",
+    "Are there any other benefits subject to fringe benefit tax? (yes/no)"
+  );
+}
+
+if (question.includes("Are there any other benefits subject to fringe benefit tax? (yes/no)")) {
+  if (answer.toLowerCase() === "yes") {
+    questions.splice(currentQuestion + 1, 0,
+      "Specify benefit under fringe benefit tax",
+      "Enter amount for other benefit under fringe benefit tax"
+    );
+  } else {
+    answers["Specify benefit under fringe benefit tax"] = "";
+    answers["Enter amount for other benefit under fringe benefit tax"] = "0.00";
+    answers["Specify another benefit under fringe benefit tax"] = "";
+    answers["Enter amount for another benefit under fringe benefit tax"] = "0.00";
+  }
+}
+
+if (question === "Enter amount for other benefit under fringe benefit tax") {
+  questions.splice(currentQuestion + 1, 0,
+    "Are there any other fringe benefit tax benefits to declare? (yes/no)"
+  );
+}
+
+if (question.includes("Are there any other fringe benefit tax benefits to declare? (yes/no)")) {
+  if (answer.toLowerCase() === "yes") {
+    questions.splice(currentQuestion + 1, 0,
+      "Specify another benefit under fringe benefit tax",
+      "Enter amount for another benefit under fringe benefit tax"
+    );
+  } else {
+    answers["Specify another benefit under fringe benefit tax"] = "";
+    answers["Enter amount for another benefit under fringe benefit tax"] = "0.00";
+  }
+}
+
+  currentQuestion++;
+  displayQuestion();
+  await updateAndDisplayPdf();
+}
+
+async function loadOriginalPdf() {
+  if (!originalPdfBytes) {
+    const res = await fetch('Editable BIR Form.pdf');
+    originalPdfBytes = await res.arrayBuffer();
+  }
+  return originalPdfBytes.slice(0);
+}
+
+async function updateAndDisplayPdf() {
+  const pdfBytes = await loadOriginalPdf();
+  const pdfDoc = await PDFLib.PDFDocument.load(pdfBytes);
+  const form = pdfDoc.getForm();
+
+  for (const [question, field] of Object.entries(fieldMappings)) {
+    const val = answers[question];
+    if (val !== undefined) {
+      try {
+        form.getTextField(field).setText(val);
+      } catch (e) {
+        console.warn(`Could not set ${field}`, e);
+      }
+    }
+  }
+  form.getCheckBox('cb11')[answers["Are you a Minimum Wage Earner (MWE)? (yes/no)"]?.toLowerCase() === "yes" ? 'check' : 'uncheck']();
+  const empType = answers["Type of employer? (main/secondary)"]?.toLowerCase();
+  if (empType === "main") form.getCheckBox('cb15').check();
+  else if (empType === "secondary") form.getCheckBox('cb15a').check();
+
+  const sumFields38 = [
+    "Basic salary (including exempt ₱250,000 & below or MWE)?",
+    "Holiday Pay (if MWE)?",
+    "Overtime Pay (if MWE)?",
+    "Night Shift Differential (if MWE)?",
+    "Hazard Pay (if MWE)?",
+    "13th Month Pay and Other Benefits (max ₱90,000)?",
+    "De Minimis Benefits?",
+    "SSS/GSIS/PHIC/PAG-IBIG contributions and union dues?",
+    "Salaries and other forms of compensation?"
+  ];
+
+  const total38 = sumFields38.reduce((sum, q) => {
+    const num = parseFloat((answers[q] || "0").replace(/[^\d.-]/g, ""));
+    return sum + (isNaN(num) ? 0 : num);
+  }, 0);
+  form.getTextField("tf38").setText(total38.toFixed(2));
+
+  const sumFields52 = [
+    "Regular Basic Salary (taxable)?", "Representation Allowance?", "Transportation Allowance?",
+    "Cost of Living Allowance (COLA)?", "Fixed Housing Allowance?",
+    "Enter the amount for other taxable compensation",
+    "Enter the amount for other non-taxable compensation",
+    "Commission?", "Profit Sharing?", "Fees Including Director's Fees?",
+    "Taxable 13th Month Benefits?", "Hazard Pay?", "Overtime Pay?",
+    "Enter amount for other benefit under fringe benefit tax", "Enter amount for another benefit under fringe benefit tax"
+  ];
+  const total52 = sumFields52.reduce((sum, q) => {
+    const num = parseFloat((answers[q] || "0").replace(/[^\d.-]/g, ""));
+    return sum + (isNaN(num) ? 0 : num);
+  }, 0);
+  form.getTextField("tf52").setText(total52.toFixed(2));
+
+  const tf19 = total38 + total52;
+  const tf20 = total38;
+  const tf21 = tf19 - tf20;
+  form.getTextField("tf19").setText(tf19.toFixed(2));
+  form.getTextField("tf20").setText(tf20.toFixed(2));
+  form.getTextField("tf21").setText(tf21.toFixed(2));
+
+  let tf22 = 0;
+  let tf25a = 0;
+
+  if (answers["Did you have a previous employer during this tax year? (yes/no)"]?.toLowerCase() === "yes") {
+    tf22 = parseFloat((answers["Amount of Taxes Withheld from Previous Employer"] || "0").replace(/[^\d.-]/g, "")) || 0;
+    tf25a = tf22;
+  }
+
+  form.getTextField("tf22").setText(tf22.toFixed(2));
+  form.getTextField("tf25a").setText(tf25a.toFixed(2));
+
+  const tf23 = total52 + tf22;
+  form.getTextField("tf22").setText(tf22.toFixed(2));
+  form.getTextField("tf23").setText(tf23.toFixed(2));
+
+  let tf24 = 0;
+  if (tf23 > 400000) {
+    tf24 = 30000 + 0.25 * (tf23 - 400000);
+  }
+  form.getTextField("tf24").setText(tf24.toFixed(2));
+
+  const tf25 = tf24;
+  form.getTextField("tf25").setText(tf25.toFixed(2));
+
+  const tf26 = tf25 + tf25a;
+  form.getTextField("tf26").setText(tf26.toFixed(2));
+
+  //paayos nito 
+  const peraContribution = parseFloat((answers["How much was your total PERA contribution this year?"] || "0").replace(/[^\d.-]/g, "")) || 0;
+  const tf27 = Math.min(peraContribution, 100000) * 0.05;
+  form.getTextField("tf27").setText(tf27.toFixed(2));
+
+  const tf28 = tf26 + tf27;
+  form.getTextField("tf28").setText(tf28.toFixed(2));
+
+
+  const updatedBytes = await pdfDoc.save();
+  const blob = new Blob([updatedBytes], { type: 'application/pdf' });
+  document.getElementById('pdfPreview').src = URL.createObjectURL(blob);
+}
+
+function downloadPdf() {
+  updateAndDisplayPdf().then(() => {
+    fetch(document.getElementById('pdfPreview').src).then(res => res.blob()).then(blob => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'Updated_Compensation_Payment_Form.pdf';
+      a.click();
+    });
+  });
+}
+
+function resetChat() {
+  questions = [
+      "What year are you reporting for?",
+      "Start date of the period (MM/DD)?",
+      "End date of the period (MM/DD)?",
+      "Your TIN?",
+      "Full name (Last, First, Middle)?",
+      "RDO Code?",
+      "Registered address?",
+      "ZIP Code?",
+      "Local home address?",
+      "ZIP Code for local home address?",
+      "Foreign address (if any)?",
+      "Date of birth (MM/DD/YYYY)?",
+      "Contact number?",
+      "Statutory minimum wage rate per day?",
+      "Statutory minimum wage rate per month?",
+      "Are you a Minimum Wage Earner (MWE)? (yes/no)",
+      "Employer's TIN?",
+      "Employer's name?",
+      "Employer's registered address?",
+      "Employer's ZIP Code?",
+      "Type of employer? (main/secondary)",
+      "Did you have a previous employer during this tax year? (yes/no)",
+      "How much was your total PERA contribution this year?"
+    ];
+
+  answers = {};
+  currentQuestion = 0;
+  chatBotElement.innerHTML = '';
+  userInputElement.value = '';
+  displayQuestion();
+}
+
+function uploadTemplate() {
+  fileInputElement.click();
+}
+
+userInputElement.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    submitAnswer();
+  }
+});
+
+displayQuestion();
+
+
+async function submitDeepSeekQuestion() {
+    const userInput = document.getElementById("deepseekUserInput").value.trim();
+    const chatContainer = document.getElementById("deepseekChatbot");
+    const loadingSpinner = document.getElementById("loadingSpinner");
+
+    if (!userInput) {
+        addMessageToChat("bot", "❌ Please enter a question.", chatContainer);
+        return;
+    }
+
+    // Show user message
+    addMessageToChat("user", userInput, chatContainer);
+    document.getElementById("deepseekUserInput").value = "";
+
+    // Show loading spinner
+    loadingSpinner.style.display = "flex";
+
+    try {
+        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Authorization": "Bearer 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", // 🔑 Replace with your key
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                model: "deepseek/deepseek-r1-distill-llama-70b:free",
+                messages: [{ role: "user", content: userInput }],
+            }),
+        });
+
+        if (!response.ok) throw new Error("API request failed.");
+        const data = await response.json();
+        const botReply = data.choices[0].message.content;
+
+        // Format the bot's response (adds line breaks & lists)
+        addMessageToChat("bot", botReply, chatContainer);
+    } catch (error) {
+        console.error("Error:", error);
+        addMessageToChat("bot", "⚠️ Error: Could not fetch response.", chatContainer);
+    } finally {
+        loadingSpinner.style.display = "none";
+    }
+}
+
+// Improved message formatting (handles line breaks & lists)
+function addMessageToChat(sender, message, container) {
+    const messageDiv = document.createElement("div");
+    messageDiv.className = sender === "user" ? "user-message" : "bot-message";
+
+    // Format bot responses (split by newlines & lists)
+    if (sender === "bot") {
+        // Replace "1.", "2." etc. with proper HTML lists
+        const formattedMessage = message
+            .replace(/\n/g, "<br>") // Convert line breaks to <br>
+            .replace(/(\d+\.)\s/g, "<br>$1 "); // Add breaks before numbered lists
+
+        messageDiv.innerHTML = formattedMessage;
+    } else {
+        messageDiv.textContent = message; // User messages (plain text)
+    }
+
+    container.appendChild(messageDiv);
+    container.scrollTop = container.scrollHeight; // Auto-scroll
+}
+
+// Add Enter-key support for both chatbots
+    document.getElementById("deepseekUserInput").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") submitDeepSeekQuestion();
+    });
+
+    document.getElementById("userInput").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") submitAnswer();
+    });
+
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loadingScreen').style.display = 'none';
+      }, 2000);
+    });
+
+</script>
+
+
+</body>
+</html>
+
