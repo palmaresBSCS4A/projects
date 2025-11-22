@@ -1,0 +1,100 @@
+[19:13:28] [192.168.254.183] Login successful for MJ101 from 192.168.254.183
+[19:13:29] [192.168.254.183] Received from client MJ101: Dashboard|MJ101
+[19:13:31] [192.168.254.183] Received from client MJ101: TIME_OUT|MJ101
+[19:13:36] [192.168.254.183] Received from client MJ101: TIME_OUT|MJ101
+[19:13:37] [192.168.254.183] Received from client MJ101: TIME_IN|MJ101
+[19:17:33] [192.168.254.183] Connection terminated for MJ101 from 192.168.254.183
+[21:34:01] [192.168.0.100] Login failed for mj101 from 192.168.0.100
+[21:34:01] [192.168.0.100] Connection terminated for mj101 from 192.168.0.100
+[21:34:23] [192.168.0.100] Login successful for mj101 from 192.168.0.100
+[21:34:24] [192.168.0.100] Received from client mj101: Dashboard|mj101
+[21:34:55] [192.168.0.100] Received from client mj101: SUBMIT_LEAVE_REQUEST|mj101|Vacation Leave|2025-06-02|2025-06-16|tani mag work na
+[21:56:30] [192.168.0.100] Connection error with mj101 from 192.168.0.100: An established connection was aborted by the software in your host machine
+[21:56:30] [192.168.0.100] Connection terminated for mj101 from 192.168.0.100
+[22:11] [192.168.0.107] Login successful for mj102 from 192.168.0.107
+[22:11:03] [192.168.0.107] Received from client mj102: Dashboard|mj102
+[22:11:38] [192.168.0.107] Received from client mj102: TIME_IN|mj102
+[22:13:08] [192.168.0.107] Received from client mj102: SUBMIT_LEAVE_REQUEST|mj102|Sick Leave|2025-06-03|2025-06-10|Hospital Admitted
+[22:15:44] [192.168.0.107] Received from client mj102: Dashboard|mj102
+[22:15:49] [192.168.0.107] Received from client mj102: TIME_IN|mj102
+[22:15:54] [192.168.0.107] Received from client mj102: TIME_OUT|mj102
+[22:16:03] [192.168.0.107] Received from client mj102: GET_LEAVE_REQUESTS|mj102
+[22:16:03] [192.168.0.107] Received from client mj102: GET_LEAVE_REQUESTS|mj102
+[22:16:25] [192.168.0.107] Received from client mj102: GET_LEAVE_REQUESTS|mj102
+[22:18:09] [192.168.0.100] Login successful for mj101 from 192.168.0.100
+[22:18:10] [192.168.0.100] Received from client mj101: Dashboard|mj101
+[22:18:13] [192.168.0.100] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[22:18:13] [192.168.0.100] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[22:18:44] [192.168.0.100] Received from client mj101: Dashboard|mj101
+[22:18:48] [192.168.0.100] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[22:18:55] [192.168.0.107] Received from client mj102: Dashboard|mj102
+[22:19:51] [192.168.0.100] Received from client mj101: Dashboard|mj101
+[22:20:10] [192.168.0.100] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[22:20:26] [192.168.0.100] Received from client mj101: Dashboard|mj101
+[22:22:16] [192.168.0.107] Received from client mj102: LOGOUT|mj102
+[22:22:16] [192.168.0.107] Client requested logout: mj102 from 192.168.0.107
+[22:22:16] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[22:22:24] [192.168.0.100] Received from client mj101: LOGOUT|mj101
+[22:22:24] [192.168.0.100] Client requested logout: mj101 from 192.168.0.100
+[22:22:24] [192.168.0.100] Connection terminated for mj101 from 192.168.0.100
+[22:57:25] [192.168.0.107] Database error during authentication: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Active' at line 1
+[22:57:25] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[22:57:25] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[22:58:06] [192.168.0.107] Database error during authentication: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Active' at line 1
+[22:58:06] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[22:58:06] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[22:58:09] [192.168.0.107] Database error during authentication: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Active' at line 1
+[22:58:09] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[22:58:09] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[22:58:28] [192.168.0.107] Database error during authentication: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Active' at line 1
+[22:58:28] [192.168.0.107] Login failed for mj101 from 192.168.0.107
+[22:58:28] [192.168.0.107] Connection terminated for mj101 from 192.168.0.107
+[23:02:02] [192.168.0.107] Login successful for mj101 from 192.168.0.107
+[23:02:04] [192.168.0.107] Received from client mj101: Dashboard|mj101
+[23:02:16] [192.168.0.107] Received from client mj101: TIME_IN|mj101
+[23:02:29] [192.168.0.107] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[23:02:29] [192.168.0.107] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[23:03:18] [192.168.0.107] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[23:03:18] [192.168.0.107] Received from client mj101: GET_LEAVE_REQUESTS|mj101
+[23:03:34] [192.168.0.107] Received from client mj101: Dashboard|mj101
+[23:03:38] [192.168.0.107] Received from client mj101: LOGOUT|mj101
+[23:03:38] [192.168.0.107] Client requested logout: mj101 from 192.168.0.107
+[23:03:38] [192.168.0.107] Connection terminated for mj101 from 192.168.0.107
+[23:04:05] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[23:04:05] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[23:04:26] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[23:04:26] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[23:19:55] [192.168.0.107] Login successful for mj102 from 192.168.0.107
+[23:19:58] [192.168.0.107] Received from client mj102: Dashboard|mj102
+[23:24:14] [192.168.0.107] Received from client mj102: LOGOUT|mj102
+[23:24:14] [192.168.0.107] Client requested logout: mj102 from 192.168.0.107
+[23:24:14] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[23:24:56] [192.168.0.107] Login successful for mj102 from 192.168.0.107
+[23:24:59] [192.168.0.107] Received from client mj102: Dashboard|mj102
+[23:26:42] [192.168.0.107] Received from client mj102: LOGOUT|mj102
+[23:26:42] [192.168.0.107] Client requested logout: mj102 from 192.168.0.107
+[23:26:42] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[23:27:11] [192.168.0.107] Login successful for mj102 from 192.168.0.107
+[23:27:14] [192.168.0.107] Received from client mj102: Dashboard|mj102
+[23:29:30] [192.168.0.107] Login successful for mj102 from 192.168.0.107
+[23:29:32] [192.168.0.107] Received from client mj102: Dashboard|mj102
+[23:31:53] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[23:31:53] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[23:38] [192.168.0.107] Database error during authentication: Access denied for user 'root'@'localhost' (using password: YES)
+[23:38] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[23:38] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[23:39:49] [192.168.0.107] Login failed for mj102 from 192.168.0.107: Account not active
+[23:39:49] [192.168.0.107] Login failed for mj102 from 192.168.0.107
+[23:39:49] [192.168.0.107] Connection terminated for mj102 from 192.168.0.107
+[23:40:33] [192.168.0.107] Login failed for mj101 from 192.168.0.107
+[23:40:33] [192.168.0.107] Connection terminated for mj101 from 192.168.0.107
+[23:40:43] [192.168.0.107] Login successful for mj101 from 192.168.0.107
+[23:40:45] [192.168.0.107] Executed Dashboard Access for mj101
+[23:54:49] [192.168.0.107] Connection error with mj101 from 192.168.0.107: An established connection was aborted by the software in your host machine
+[23:54:49] [192.168.0.107] Connection terminated for mj101 from 192.168.0.107
+[23:59:21] [192.168.0.107] Login successful for MJ101 from 192.168.0.107
+[23:59:22] [192.168.0.107] Executed Dashboard Access for MJ101
+[23:59:30] [192.168.0.107] Executed GET_LEAVE_REQUESTS for MJ101
+[23:59:32] [192.168.0.107] Executed Dashboard Access for MJ101
+[23:59:37] [192.168.0.107] Client requested logout: MJ101 from 192.168.0.107
+[23:59:37] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107

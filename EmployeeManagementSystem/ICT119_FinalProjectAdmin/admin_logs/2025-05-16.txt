@@ -1,0 +1,7 @@
+[2025-05-16 21:35:27] Admin ID: MJAD101 - Admin login successfully
+[2025-05-16 21:35:30] Admin ID: MJAD101 - Viewed leave requests
+[2025-05-16 22:16:21] Admin ID: MJAD101 - Approved leave request for Employee ID: mj102 from 2025-06-03 to 2025-06-10
+[2025-05-16 23:02:42] Admin ID: MJAD101 - Admin login successfully
+[2025-05-16 23:02:45] Admin ID: MJAD101 - Viewed leave requests
+[2025-05-16 23:03:14] Admin ID: MJAD101 - Approved leave request for Employee ID: mj101 from 2025-06-02 to 2025-06-16
+[2025-05-16 23:04:13] Admin ID: MJAD101 - Logged out

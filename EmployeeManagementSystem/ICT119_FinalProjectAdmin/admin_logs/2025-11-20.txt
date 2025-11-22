@@ -1,0 +1,24 @@
+[2025-11-20 22:08:06] Admin ID: MJAD101 - Admin login successfully
+[2025-11-20 22:08:10] Admin ID: MJAD101 - Viewed leave requests
+[2025-11-20 22:08:17] Admin ID: MJAD101 - Rejected leave request for Employee ID: mj101 from 2025-11-21 to 2025-11-25
+[2025-11-20 22:08:26] Admin ID: MJAD101 - Viewed employees
+[2025-11-20 22:08:40] Admin ID: MJAD101 - Viewed attendance records
+[2025-11-20 22:08:50] Admin ID: MJAD101 - Logged out
+[2025-11-20 22:21:55] Admin ID: MJAD101 - Admin login successfully
+[2025-11-20 22:22:09] Admin ID: MJAD101 - Viewed employees
+[2025-11-20 22:22:21] Admin ID: MJAD101 - Viewed attendance records
+[2025-11-20 22:23:06] Admin ID: MJAD101 - Generated report: Summary per Employee
+[2025-11-20 22:23:27] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-11-20 22:23:33] Admin ID: MJAD101 - Generated report: Late or Incomplete Days
+[2025-11-20 22:23:39] Admin ID: MJAD101 - Viewed leave requests
+[2025-11-20 22:23:48] Admin ID: MJAD101 - Approved leave request for Employee ID: mj101 from 2025-11-21 to 2025-11-27
+[2025-11-20 22:24:16] Admin ID: MJAD101 - Logged out
+[2025-11-20 22:26:39] Admin ID: MJAD101 - Admin login successfully
+[2025-11-20 22:26:49] Admin ID: MJAD101 - Viewed employees
+[2025-11-20 22:27:01] Admin ID: MJAD101 - Viewed attendance records
+[2025-11-20 22:27:17] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-11-20 22:27:21] Admin ID: MJAD101 - Generated report: Summary per Employee
+[2025-11-20 22:27:27] Admin ID: MJAD101 - Generated report: Late or Incomplete Days
+[2025-11-20 22:27:41] Admin ID: MJAD101 - Viewed leave requests
+[2025-11-20 22:27:52] Admin ID: MJAD101 - Approved leave request for Employee ID: mj101 from 2025-11-21 to 2025-11-24
+[2025-11-20 22:28:27] Admin ID: MJAD101 - Logged out

@@ -1,0 +1,78 @@
+[21:44:21] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[21:44:23] [192.168.1.4] Executed Dashboard Access for mj101
+[21:44:24] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[21:44:33] [192.168.1.4] Connection error with mj101 from 192.168.1.4: Connection reset
+[21:44:33] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[21:45:40] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[21:45:41] [192.168.1.4] Executed Dashboard Access for mj101
+[21:46:07] [192.168.1.4] Connection error with mj101 from 192.168.1.4: Connection reset
+[21:46:07] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[08:59:01] [192.168.1.4] Database error during authentication: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[08:59:01] [192.168.1.4] Login failed for mj101 from 192.168.1.4
+[08:59:01] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[21:49:27] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[21:49:28] [192.168.1.4] Executed Dashboard Access for mj101
+[21:49:42] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[21:49:49] [192.168.1.4] FAILED time-out for empId=mj101: ERROR|Time-out not allowed at this time
+[21:50:19] [192.168.1.4] Connection error with mj101 from 192.168.1.4: Connection reset
+[21:50:19] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[21:51:23] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[21:51:24] [192.168.1.4] Executed Dashboard Access for mj101
+[16:05:10] [192.168.1.4] Connection error with mj101 from 192.168.1.4: Connection reset
+[16:05:10] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[21:56:41] [192.168.1.4] Login successful for MJ101 from 192.168.1.4
+[21:56:42] [192.168.1.4] Executed Dashboard Access for MJ101
+[21:58:37] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[21:58:38] [192.168.1.4] Executed Dashboard Access for mj101
+[22:01:09] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[22:01:10] [192.168.1.4] Executed Dashboard Access for mj101
+[22:03:45] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[22:03:46] [192.168.1.4] Executed Dashboard Access for mj101
+[22:03:53] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[08:59:16] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[09:00:04] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Database error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[09:00:08] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Database error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[09:00:09] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[09:00:41] [192.168.1.4] Database error during authentication: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[09:00:41] [192.168.1.4] Login failed for mj101 from 192.168.1.4
+[09:00:41] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[22:07:08] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[22:07:09] [192.168.1.4] Executed Dashboard Access for mj101
+[22:07:13] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[22:07:16] [192.168.1.4] FAILED time-out for empId=mj101: ERROR|Time-out not allowed at this time
+[22:07:42] [192.168.1.4] Executed SUBMIT_LEAVE_REQUEST for mj101
+[22:07:45] [192.168.1.4] Executed Dashboard Access for mj101
+[22:07:48] [192.168.1.4] Executed GET_LEAVE_REQUESTS for mj101
+[22:07:50] [192.168.1.4] Executed Dashboard Access for mj101
+[22:19:50] [192.168.1.4] Connection error with mj101 from 192.168.1.4: Connection reset
+[22:19:50] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[22:20:39] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[22:20:40] [192.168.1.4] Executed Dashboard Access for mj101
+[22:20:49] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[22:20:54] [192.168.1.4] FAILED time-out for empId=mj101: ERROR|Time-out not allowed at this time
+[22:21:22] [192.168.1.4] Executed SUBMIT_LEAVE_REQUEST for mj101
+[22:21:25] [192.168.1.4] Executed Dashboard Access for mj101
+[22:21:28] [192.168.1.4] Executed GET_LEAVE_REQUESTS for mj101
+[22:21:32] [192.168.1.4] Executed Dashboard Access for mj101
+[22:23:58] [192.168.1.4] Executed GET_LEAVE_REQUESTS for mj101
+[22:24:18] [192.168.1.4] Executed Dashboard Access for mj101
+[22:24:20] [192.168.1.4] Client requested logout: mj101 from 192.168.1.4
+[22:24:20] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[22:25:42] [192.168.1.4] Login successful for mj101 from 192.168.1.4
+[22:25:43] [192.168.1.4] Executed Dashboard Access for mj101
+[22:25:51] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[22:25:55] [192.168.1.4] FAILED time-out for empId=mj101: ERROR|Time-out not allowed at this time
+[22:26:24] [192.168.1.4] Executed SUBMIT_LEAVE_REQUEST for mj101
+[22:28] [192.168.1.4] Executed Dashboard Access for mj101
+[22:28:03] [192.168.1.4] Executed GET_LEAVE_REQUESTS for mj101
+[22:28:16] [192.168.1.4] Executed Dashboard Access for mj101
+[22:28:21] [192.168.1.4] Client requested logout: mj101 from 192.168.1.4
+[22:28:21] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4

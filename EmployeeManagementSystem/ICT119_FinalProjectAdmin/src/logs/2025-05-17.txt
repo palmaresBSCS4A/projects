@@ -1,0 +1,27 @@
+[12:51:59] [192.168.0.107] Database error during authentication: No suitable driver found for jdbc:mysql://localhost:3306/employee_attendance_system
+[12:51:59] [192.168.0.107] Login failed for MJ101 from 192.168.0.107
+[12:51:59] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107
+[12:52:17] [192.168.0.107] Database error during authentication: No suitable driver found for jdbc:mysql://localhost:3306/employee_attendance_system
+[12:52:17] [192.168.0.107] Login failed for MJ101 from 192.168.0.107
+[12:52:17] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107
+[12:52:26] [192.168.0.107] Database error during authentication: No suitable driver found for jdbc:mysql://localhost:3306/employee_attendance_system
+[12:52:26] [192.168.0.107] Login failed for MJ101 from 192.168.0.107
+[12:52:26] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107
+[12:53:34] [192.168.0.107] Database error during authentication: No suitable driver found for jdbc:mysql://localhost:3306/employee_attendance_system
+[12:53:34] [192.168.0.107] Login failed for MJ101 from 192.168.0.107
+[12:53:34] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107
+[12:54:05] [192.168.0.107] Database error during authentication: No suitable driver found for jdbc:mysql://localhost:3306/employee_attendance_system
+[12:54:05] [192.168.0.107] Login failed for MJ101 from 192.168.0.107
+[12:54:05] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107
+[12:55:30] [192.168.0.107] Database error during authentication: No suitable driver found for jdbc:mysql://localhost:3306/employee_attendance_system
+[12:55:30] [192.168.0.107] Login failed for MJ101 from 192.168.0.107
+[12:55:30] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107
+[12:57:34] [192.168.0.107] Database error during authentication: No suitable driver found for jdbc:mysql://localhost:3306/employee_attendance_system
+[12:57:34] [192.168.0.107] Login failed for MJ101 from 192.168.0.107
+[12:57:34] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107
+[13:01:43] [192.168.0.107] Login successful for MJ101 from 192.168.0.107
+[13:01:44] [192.168.0.107] Executed Dashboard Access for MJ101
+[13:07:33] [192.168.0.107] SUCCESS time-in for empId=MJ101: SUCCESS|TIME IN PM recorded
+[13:07:34] [192.168.0.107] FAILED time-in for empId=MJ101: ERROR|TIME IN PM already recorded
+[13:08:11] [192.168.0.107] Connection error with MJ101 from 192.168.0.107: Connection reset
+[13:08:11] [192.168.0.107] Connection terminated for MJ101 from 192.168.0.107

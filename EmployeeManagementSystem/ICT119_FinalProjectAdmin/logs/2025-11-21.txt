@@ -1,0 +1,13 @@
+[08:59:55] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[09:00:04] [192.168.1.4] SUCCESS time-in for empId=mj101: SUCCESS|TIME IN AM recorded
+[09:00:38] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|TIME IN AM already recorded
+[08:59:11] [192.168.1.4] FAILED time-in for empId=MJ101: ERROR|Time-in not allowed at this time
+[08:59:26] [192.168.1.4] Connection error with MJ101 from 192.168.1.4: Connection reset
+[08:59:26] [192.168.1.4] Connection terminated for MJ101 from 192.168.1.4
+[08:59:58] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[09:00:08] [192.168.1.4] SUCCESS time-in for empId=mj101: SUCCESS|TIME IN AM recorded
+[09:01:02] [192.168.1.4] Connection error with mj101 from 192.168.1.4: Connection reset
+[09:01:02] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4
+[08:59:32] [192.168.1.4] FAILED time-in for empId=mj101: ERROR|Time-in not allowed at this time
+[08:59:48] [192.168.1.4] Connection error with mj101 from 192.168.1.4: Connection reset
+[08:59:48] [192.168.1.4] Connection terminated for mj101 from 192.168.1.4

@@ -1,0 +1,78 @@
+[2025-05-17 00:03:01] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 00:03:05] Admin ID: MJAD101 - Viewed attendance records
+[2025-05-17 00:03:34] Admin ID: MJAD101 - Generated report: Summary per Employee
+[2025-05-17 00:03:34] Admin ID: MJAD101 - Generated report: Summary per Employee
+[2025-05-17 00:04:05] Admin ID: MJAD101 - Generated report: Late or Incomplete Days
+[2025-05-17 00:04:11] Admin ID: MJAD101 - Logged out
+[2025-05-17 00:07:34] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 00:07:42] Admin ID: MJAD101 - Viewed attendance records
+[2025-05-17 00:07:46] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 00:08:17] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 00:08:27] Admin ID: MJAD101 - Generated report: Summary per Employee
+[2025-05-17 00:08:31] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 00:08:46] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 00:09:21] Admin ID: MJAD101 - Logged out
+[2025-05-17 09:10:07] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 09:10:11] Admin ID: MJAD101 - Viewed attendance records
+[2025-05-17 09:10:23] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:25] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:30] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:32] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:33] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:33] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:35] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:42] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:45] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:46] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:46] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:46] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:50] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:54] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:55] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:10:56] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-10
+[2025-05-17 09:11:05] Admin ID: MJAD101 - Generated filtered report: Summary per Employee from 2025-05-01 to 2025-05-02
+[2025-05-17 09:11:07] Admin ID: MJAD101 - Generated filtered report: Summary per Employee from 2025-05-01 to 2025-05-02
+[2025-05-17 09:11:11] Admin ID: MJAD101 - Generated filtered report: Full Attendance Records from 2025-05-01 to 2025-05-02
+[2025-05-17 09:11:21] Admin ID: MJAD101 - Logged out
+[2025-05-17 09:44:07] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 09:44:16] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 09:45:26] Admin ID: MJAD101 - Viewed attendance records
+[2025-05-17 09:45:29] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 09:45:46] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 09:45:56] Admin ID: MJAD101 - Generated report: Summary per Employee
+[2025-05-17 09:46:07] Admin ID: MJAD101 - Generated report: Late or Incomplete Days
+[2025-05-17 09:46:17] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 09:46:21] Admin ID: MJAD101 - Logged out
+[2025-05-17 09:52:54] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 09:52:57] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 09:53:13] Admin ID: MJAD101 - Logged out
+[2025-05-17 10:21:35] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 10:21:37] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 10:21:52] Admin ID: MJAD101 - Logged out
+[2025-05-17 10:24:40] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 10:24:42] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 10:28:34] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 10:28:37] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 10:35:09] Admin ID: MJAD101 - Logged out
+[2025-05-17 10:35:38] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 10:35:41] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 10:35:59] Admin ID: MJAD101 - Logged out
+[2025-05-17 10:40:53] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 10:40:56] Admin ID: MJAD101 - Viewed employees
+[2025-05-17 10:41:18] Admin ID: MJAD101 - Viewed attendance records
+[2025-05-17 10:41:21] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 10:41:29] Admin ID: MJAD101 - Viewed attendance records
+[2025-05-17 10:41:36] Admin ID: MJAD101 - Generated report: Full Attendance Records
+[2025-05-17 11:23:50] Admin ID: MJAD101 - Logged out
+[2025-05-17 12:12:08] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 12:12:13] Admin ID: MJAD101 - Viewed leave requests
+[2025-05-17 12:12:30] Admin ID: MJAD101 - Approved leave request for Employee ID: MJ101 from 2025-05-19 to 2025-05-23
+[2025-05-17 12:18:29] Admin ID: MJAD101 - Logged out
+[2025-05-17 12:22:51] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 12:22:54] Admin ID: MJAD101 - Viewed leave requests
+[2025-05-17 12:29:41] Admin ID: MJAD101 - Logged out
+[2025-05-17 12:30:40] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 12:30:51] Admin ID: MJAD101 - Viewed leave requests
+[2025-05-17 12:31:04] Admin ID: MJAD101 - Logged out
+[2025-05-17 12:31:35] Admin ID: MJAD101 - Admin login successfully
+[2025-05-17 12:31:38] Admin ID: MJAD101 - Viewed leave requests
